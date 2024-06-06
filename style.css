@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif:wght@400;500;700&family=Outfit:wght@400;600;700&display=swap");
+
+:root {
+  --primary-nutmeg: hsl(14, 45%, 36%);
+  --secondary-dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --primary-font: "Outfit", sans-serif;
+  --secondary-font: "Young Serif", serif;
+  --content-weight-1: 400;
+  --content-weight-2: 700;
+  --content-font-size: 1rem;
+  --heading-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    max-width: 375px;
+    height: fit-content;
+    padding: unset;
+    margin: unset;
+    box-sizing: content-box;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--white);
+  color: var(--dark-charcoal);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--eggshell);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: var(--heading-weight);
+  color: var(--wenge-brown);
+}
+
+.prepTime {
+  background-color: var(--rose-white);
+  padding: 20px;
+}
+
+.prepTime li {
+  margin: 10px 0;
+}
+
+.primary-button {
+  background-color: var(--primary-nutmeg);
+  color: var(--white);
+}
+
+.secondary-button {
+  background-color: var(--secondary-dark-raspberry);
+  color: var(--white);
+}
+
+.light-background {
+  background-color: var(--light-grey);
+}
+
+.weight1 {
+  font-weight: 400;
+}
+
+.weight2 {
+  font-weight: 700;
+}
+
+.fontSize {
+  font-size: 1rem;
+}
+
+#mainHeading {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  font-weight: var(--heading-weight);
+  color: var(--dark-charcoal);
+  font-size: calc(var(--content-font-size) * 2);
+}
+
+.subHeading {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  font-weight: var(--heading-weight);
+  color: var(--secondary-dark-raspberry);
+  font-size: calc(var(--content-font-size) * 1.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card {
+  max-width: 520px;
+  padding: 30px;
+  margin: 20px auto;
+  background-color: var(--white);
+  font-weight: var(--content-weight-1);
+  font-size: calc(var(--content-font-size) * 1.25);
+  color: var(--wenge-brown);
+}
+
+.list3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 0;
+  margin: 0;
+  padding: 0;
+}
+
+.list3 p.units {
+  color: var(--secondary-dark-raspberry);
+}
+
+.list3 p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+p.boldContent.noBorderBottom,
+p.units.noBorderBottom {
+  border-bottom: none;
+}
